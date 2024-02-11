@@ -14,6 +14,7 @@ import Pricing from "./pricing-section";
 import Testimonials from "@/components/testimonials";
 import Cta from "@/components/cta";
 import Carousel from "@/components/carousel/carousel";
+import Particles from "@/components/particles";
 
 export default function Home() {
   return (
