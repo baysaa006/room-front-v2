@@ -8,6 +8,11 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "overrides": {
+    "next-contentlayer": {
+      "next": "$next"
+    }
+  },
   "dependencies": {
     "@apollo/client": "^3.9.4",
     "@apollo/experimental-nextjs-app-support": "^0.8.0",
