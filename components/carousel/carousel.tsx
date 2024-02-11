@@ -34,9 +34,9 @@ const Carousel = () => {
   return (
     <div className="mb-16 mt-10 flex w-full gap-4 justify-center flex-col">
       <h3 className="h3  text-center bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-3">
-        Examples
+        Үр дүн
       </h3>
-      <div className=" inline-flex w-full flex-col items-center  ">
+      <div className=" inline-flex w-full flex-col items-center">
         <ReactCompareSlider
           handle={
             <ReactCompareSliderHandle

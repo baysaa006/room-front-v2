@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Input } from "@/components/ui/input";
 
 export default function Pricing() {
   const [annual, setAnnual] = useState<boolean>(true);
@@ -41,7 +42,7 @@ export default function Pricing() {
               <div className="inline-flex items-center whitespace-nowrap">
                 <div className="relative">
                   <h2 className="h2 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">
-                    Plans
+                    Багцууд
                   </h2>
                 </div>
               </div>
@@ -52,23 +53,22 @@ export default function Pricing() {
         <div className="px-6 flex flex-col justify-end">
           <div className="grow pb-4 mb-4 border-b border-slate-800">
             <div className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">
-              Pro
+              Simple
             </div>
             <div className="mb-1">
-              <span className="text-lg font-medium text-slate-500">$</span>
               <span className="text-3xl font-bold text-slate-50">
-                {annual ? "24" : "29"}
+                {"9,900"}{" "}
               </span>
-              <span className="text-sm text-slate-600 font-medium">/mo</span>
+              <span className="text-lg font-medium text-slate-500">₮</span>
             </div>
-            <div className="text-slate-500">Everything at your fingertips.</div>
+            <div className="text-slate-500">Хугацаа хамаарахгүй.</div>
           </div>
           <div className="pb-4 border-b border-slate-800">
             <a
               className="btn-sm text-slate-900 bg-gradient-to-r from-white/80 via-white to-white/80 hover:bg-white w-full transition duration-150 ease-in-out group"
               href="#0"
             >
-              Get Started{" "}
+              Эхлэх{" "}
               <span className="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                 -&gt;
               </span>
@@ -79,23 +79,22 @@ export default function Pricing() {
         <div className="px-6 flex flex-col justify-end">
           <div className="grow pb-4 mb-4 border-b border-slate-800">
             <div className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">
-              Team
+              Advenced
             </div>
             <div className="mb-1">
-              <span className="text-lg font-medium text-slate-500">$</span>
               <span className="text-3xl font-bold text-slate-50">
-                {annual ? "49" : "54"}
+                {"18,900"}{" "}
               </span>
-              <span className="text-sm text-slate-600 font-medium">/mo</span>
+              <span className="text-lg font-medium text-slate-500">₮</span>
             </div>
-            <div className="text-slate-500">Everything at your fingertips.</div>
+            <div className="text-slate-500">Хугацаа хамаарахгүй.</div>
           </div>
           <div className="pb-4 border-b border-slate-800">
             <a
               className="btn-sm text-white bg-purple-500 hover:bg-purple-600 w-full transition duration-150 ease-in-out group"
               href="#0"
             >
-              Get Started{" "}
+              Эхлэх{" "}
               <span className="tracking-normal text-purple-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                 -&gt;
               </span>
@@ -106,52 +105,31 @@ export default function Pricing() {
         <div className="px-6 flex flex-col justify-end">
           <div className="grow pb-4 mb-4 border-b border-slate-800">
             <div className="text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-0.5">
-              Enterprise
+              Pro
             </div>
             <div className="mb-1">
-              <span className="text-lg font-medium text-slate-500">$</span>
               <span className="text-3xl font-bold text-slate-50">
-                {annual ? "79" : "85"}
+                {"28,900"}{" "}
               </span>
-              <span className="text-sm text-slate-600 font-medium">/mo</span>
+              <span className="text-lg font-medium text-slate-500">₮</span>
             </div>
-            <div className="text-slate-500">Everything at your fingertips.</div>
+            <div className="text-slate-500">Хугацаа хамаарахгүй.</div>
           </div>
           <div className="pb-4 border-b border-slate-800">
             <a
-              className="btn-sm text-slate-900 bg-gradient-to-r from-white/80 via-white to-white/80 hover:bg-white w-full transition duration-150 ease-in-out group"
+              className="btn-sm text-white bg-purple-500 hover:bg-purple-600 w-full transition duration-150 ease-in-out group"
               href="#0"
             >
-              Get Started{" "}
-              <span className="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
+              Эхлэх{" "}
+              <span className="tracking-normal text-purple-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                 -&gt;
               </span>
             </a>
           </div>
         </div>
-        {/* # Usage */}
         <div className="px-6 flex flex-col justify-end">
-          <div className="py-2 text-slate-50 font-medium mt-4">Usage</div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="py-2 text-slate-50 font-medium mt-4 md:hidden">
-            Usage
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="py-2 text-slate-50 font-medium mt-4 md:hidden">
-            Usage
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="py-2 text-slate-50 font-medium mt-4 md:hidden">
-            Usage
-          </div>
-        </div>
-        {/* Social Connections */}
-        <div className="px-6 flex flex-col justify-end">
-          <div className="py-2 text-slate-400 border-b border-slate-800">
-            Social Connections
+          <div className="py-2 text-slate-50 font-medium mt-4">
+            Зураг янзлах эрх
           </div>
         </div>
         <div className="px-6 flex flex-col justify-end">
@@ -165,7 +143,7 @@ export default function Pricing() {
               <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
             </svg>
             <span>
-              100 <span className="md:hidden">Social Connections</span>
+              10 <span className="md:hidden"> Зураг янзлах эрх</span>
             </span>
           </div>
         </div>
@@ -180,7 +158,7 @@ export default function Pricing() {
               <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
             </svg>
             <span>
-              250 <span className="md:hidden">Social Connections</span>
+              20 <span className="md:hidden"> Зураг янзлах эрх</span>
             </span>
           </div>
         </div>
@@ -195,499 +173,7 @@ export default function Pricing() {
               <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
             </svg>
             <span>
-              Unlimited <span className="md:hidden">Social Connections</span>
-            </span>
-          </div>
-        </div>
-        {/* Custom Domains */}
-        <div className="px-6 flex flex-col justify-end">
-          <div className="py-2 text-slate-400 border-b border-slate-800">
-            Custom Domains
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center h-full border-b border-slate-800 py-2 text-slate-400">
-            <svg
-              className="shrink-0 fill-purple-500 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="9"
-            >
-              <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
-            </svg>
-            <span>
-              4 <span className="md:hidden">Custom Domains</span>
-            </span>
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center h-full border-b border-slate-800 py-2 text-slate-400">
-            <svg
-              className="shrink-0 fill-purple-500 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="9"
-            >
-              <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
-            </svg>
-            <span>
-              Unlimited <span className="md:hidden">Custom Domains</span>
-            </span>
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center h-full border-b border-slate-800 py-2 text-slate-400">
-            <svg
-              className="shrink-0 fill-purple-500 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="9"
-            >
-              <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
-            </svg>
-            <span>
-              Unlimited <span className="md:hidden">Custom Domains</span>
-            </span>
-          </div>
-        </div>
-        {/* User Role Management */}
-        <div className="px-6 flex flex-col justify-end">
-          <div className="py-2 text-slate-400 border-b border-slate-800">
-            User Role Management
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center h-full border-b border-slate-800 py-2 text-slate-400">
-            <svg
-              className="shrink-0 fill-purple-500 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="9"
-            >
-              <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
-            </svg>
-            <span>
-              Unlimited <span className="md:hidden">User Role Management</span>
-            </span>
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center h-full border-b border-slate-800 py-2 text-slate-400">
-            <svg
-              className="shrink-0 fill-purple-500 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="9"
-            >
-              <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
-            </svg>
-            <span>
-              Unlimited <span className="md:hidden">User Role Management</span>
-            </span>
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center h-full border-b border-slate-800 py-2 text-slate-400">
-            <svg
-              className="shrink-0 fill-purple-500 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="9"
-            >
-              <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
-            </svg>
-            <span>
-              Unlimited <span className="md:hidden">User Role Management</span>
-            </span>
-          </div>
-        </div>
-        {/* External Databases */}
-        <div className="px-6 flex flex-col justify-end">
-          <div className="py-2 text-slate-400 border-b border-slate-800">
-            External Databases
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center h-full border-b border-slate-800 py-2 text-slate-400">
-            <svg
-              className="shrink-0 fill-purple-500 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="9"
-            >
-              <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
-            </svg>
-            <span>
-              1 <span className="md:hidden">External Databases</span>
-            </span>
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center h-full border-b border-slate-800 py-2 text-slate-400">
-            <svg
-              className="shrink-0 fill-purple-500 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="9"
-            >
-              <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
-            </svg>
-            <span>
-              5 <span className="md:hidden">External Databases</span>
-            </span>
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center h-full border-b border-slate-800 py-2 text-slate-400">
-            <svg
-              className="shrink-0 fill-purple-500 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="9"
-            >
-              <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
-            </svg>
-            <span>
-              Unlimited <span className="md:hidden">External Databases</span>
-            </span>
-          </div>
-        </div>
-        {/* # Features */}
-        <div className="px-6 flex flex-col justify-end">
-          <div className="py-2 text-slate-50 font-medium mt-4">Features</div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="py-2 text-slate-50 font-medium mt-4 md:hidden">
-            Features
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="py-2 text-slate-50 font-medium mt-4 md:hidden">
-            Features
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="py-2 text-slate-50 font-medium mt-4 md:hidden">
-            Features
-          </div>
-        </div>
-        {/* Custom Connection */}
-        <div className="px-6 flex flex-col justify-end">
-          <div className="py-2 text-slate-400 border-b border-slate-800">
-            Custom Connection
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center h-full border-b border-slate-800 py-2 text-slate-400">
-            <svg
-              className="shrink-0 fill-purple-500 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="9"
-            >
-              <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
-            </svg>
-            <span>
-              <span className="md:hidden">Custom Connection</span>
-            </span>
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center h-full border-b border-slate-800 py-2 text-slate-400">
-            <svg
-              className="shrink-0 fill-purple-500 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="9"
-            >
-              <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
-            </svg>
-            <span>
-              <span className="md:hidden">Custom Connection</span>
-            </span>
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center h-full border-b border-slate-800 py-2 text-slate-400">
-            <svg
-              className="shrink-0 fill-purple-500 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="9"
-            >
-              <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
-            </svg>
-            <span>
-              <span className="md:hidden">Custom Connection</span>
-            </span>
-          </div>
-        </div>
-        {/* Advanced Deployment Options */}
-        <div className="px-6 flex flex-col justify-end">
-          <div className="py-2 text-slate-400 border-b border-slate-800">
-            Advanced Deployment Options
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center h-full border-b border-slate-800 py-2 text-slate-400">
-            <svg
-              className="shrink-0 fill-purple-500 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="9"
-            >
-              <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
-            </svg>
-            <span>
-              <span className="md:hidden">Advanced Deployment Options</span>
-            </span>
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center h-full border-b border-slate-800 py-2 text-slate-400">
-            <svg
-              className="shrink-0 fill-purple-500 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="9"
-            >
-              <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
-            </svg>
-            <span>
-              <span className="md:hidden">Advanced Deployment Options</span>
-            </span>
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center h-full border-b border-slate-800 py-2 text-slate-400">
-            <svg
-              className="shrink-0 fill-purple-500 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="9"
-            >
-              <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
-            </svg>
-            <span>
-              <span className="md:hidden">Advanced Deployment Options</span>
-            </span>
-          </div>
-        </div>
-        {/* Extra Add-ons */}
-        <div className="px-6 flex flex-col justify-end">
-          <div className="py-2 text-slate-400 border-b border-slate-800">
-            Extra Add-ons
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center h-full border-b border-slate-800 py-2 text-slate-400">
-            <svg
-              className="shrink-0 fill-purple-500 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="9"
-            >
-              <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
-            </svg>
-            <span>
-              <span className="md:hidden">Extra Add-ons</span>
-            </span>
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center h-full border-b border-slate-800 py-2 text-slate-400">
-            <svg
-              className="shrink-0 fill-purple-500 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="9"
-            >
-              <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
-            </svg>
-            <span>
-              <span className="md:hidden">Extra Add-ons</span>
-            </span>
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center h-full border-b border-slate-800 py-2 text-slate-400">
-            <svg
-              className="shrink-0 fill-purple-500 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="9"
-            >
-              <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
-            </svg>
-            <span>
-              <span className="md:hidden">Extra Add-ons</span>
-            </span>
-          </div>
-        </div>
-        {/* Admin Roles */}
-        <div className="px-6 flex flex-col justify-end">
-          <div className="py-2 text-slate-400 border-b border-slate-800">
-            Admin Roles
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center border-b border-slate-800 py-2 text-slate-400 max-md:hidden">
-            <span>
-              <span className="md:hidden">Admin Roles</span>
-            </span>
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center border-b border-slate-800 py-2 text-slate-400 max-md:hidden">
-            <span>
-              <span className="md:hidden">Admin Roles</span>
-            </span>
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center h-full border-b border-slate-800 py-2 text-slate-400">
-            <svg
-              className="shrink-0 fill-purple-500 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="9"
-            >
-              <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
-            </svg>
-            <span>
-              <span className="md:hidden">Admin Roles</span>
-            </span>
-          </div>
-        </div>
-        {/* Deploy and Monitor */}
-        <div className="px-6 flex flex-col justify-end">
-          <div className="py-2 text-slate-400 border-b border-slate-800">
-            Deploy and Monitor
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center border-b border-slate-800 py-2 text-slate-400 max-md:hidden">
-            <span>
-              <span className="md:hidden">Deploy and Monitor</span>
-            </span>
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center border-b border-slate-800 py-2 text-slate-400 max-md:hidden">
-            <span>
-              <span className="md:hidden">Deploy and Monitor</span>
-            </span>
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center h-full border-b border-slate-800 py-2 text-slate-400">
-            <svg
-              className="shrink-0 fill-purple-500 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="9"
-            >
-              <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
-            </svg>
-            <span>
-              <span className="md:hidden">Deploy and Monitor</span>
-            </span>
-          </div>
-        </div>
-        {/* Enterprise Add-ons */}
-        <div className="px-6 flex flex-col justify-end">
-          <div className="py-2 text-slate-400 border-b border-slate-800">
-            Enterprise Add-ons
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center border-b border-slate-800 py-2 text-slate-400 max-md:hidden">
-            <span>
-              <span className="md:hidden">Enterprise Add-ons</span>
-            </span>
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center border-b border-slate-800 py-2 text-slate-400 max-md:hidden">
-            <span>
-              <span className="md:hidden">Enterprise Add-ons</span>
-            </span>
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center h-full border-b border-slate-800 py-2 text-slate-400">
-            <svg
-              className="shrink-0 fill-purple-500 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="9"
-            >
-              <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
-            </svg>
-            <span>
-              <span className="md:hidden">Enterprise Add-ons</span>
-            </span>
-          </div>
-        </div>
-        {/* # Support */}
-        <div className="px-6 flex flex-col justify-end">
-          <div className="py-2 text-slate-50 font-medium mt-4">Support</div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="py-2 text-slate-50 font-medium mt-4 hidden">
-            Support
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="py-2 text-slate-50 font-medium mt-4 md:hidden">
-            Support
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="py-2 text-slate-50 font-medium mt-4 md:hidden">
-            Support
-          </div>
-        </div>
-        {/* Premium Support */}
-        <div className="px-6 flex flex-col justify-end">
-          <div className="py-2 text-slate-400 border-b border-slate-800">
-            Premium Support
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center border-b border-slate-800 py-2 text-slate-400 max-md:hidden">
-            <span>
-              <span className="md:hidden">Premium Support</span>
-            </span>
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center h-full border-b border-slate-800 py-2 text-slate-400">
-            <svg
-              className="shrink-0 fill-purple-500 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="9"
-            >
-              <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
-            </svg>
-            <span>
-              <span className="md:hidden">Premium Support</span>
-            </span>
-          </div>
-        </div>
-        <div className="px-6 flex flex-col justify-end">
-          <div className="flex items-center h-full border-b border-slate-800 py-2 text-slate-400">
-            <svg
-              className="shrink-0 fill-purple-500 mr-3"
-              xmlns="http://www.w3.org/2000/svg"
-              width="12"
-              height="9"
-            >
-              <path d="M10.28.28 3.989 6.575 1.695 4.28A1 1 0 0 0 .28 5.695l3 3a1 1 0 0 0 1.414 0l7-7A1 1 0 0 0 10.28.28Z" />
-            </svg>
-            <span>
-              <span className="md:hidden">Premium Support</span>
+              30 <span className="md:hidden"> Зураг янзлах эрх</span>
             </span>
           </div>
         </div>
