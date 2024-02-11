@@ -1,12 +1,14 @@
 "use client";
 
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Header from "@/components/ui/header";
 import Footer from "@/components/ui/footer";
+import { redirect } from "next/navigation";
+import { AuthContext } from "@/lib/context/auth.context";
 
 export default function AdminLayout({
   children,
@@ -24,9 +26,9 @@ export default function AdminLayout({
 
   return (
     <>
-      <Header />
+      <Header admin={true} />
       <main className="grow">{children}</main>
-      <Footer />
+      <Footer admin={true} />
     </>
   );
 }

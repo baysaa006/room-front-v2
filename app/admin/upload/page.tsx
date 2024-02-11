@@ -1,15 +1,14 @@
 "use client";
-import Card from "components/card";
 import { useQuery, useSubscription } from "@apollo/client";
 import { ON_UPDATED_UPLOAD } from "lib/graphql/subscriptions/upload";
 import React, { useContext } from "react";
 import { GET_UPLOADS } from "lib/graphql/query/upload";
-import { FaLongArrowAltRight } from "react-icons/fa";
 import { AuthContext } from "@/lib/context/auth.context";
 import Link from "next/link";
 import Image from "next/image";
+import { redirect } from "next/navigation";
 const Index = () => {
-  const { payload } = useContext(AuthContext);
+  const { payload, isAuthenticated } = useContext(AuthContext);
 
   const { data, loading } = useQuery(GET_UPLOADS, {
     fetchPolicy: "network-only",
@@ -38,6 +37,8 @@ const Index = () => {
       .catch((error) => console.error("Error downloading image:", error));
   };
 
+  if (!isAuthenticated) redirect("/");
+
   if (loading) return;
   else
     return (
@@ -48,7 +49,10 @@ const Index = () => {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
           {data &&
             data?.getPredictions?.map((data: any, index: number) => (
-              <div className="swiper-slide h-auto bg-gradient-to-tr from-slate-800 to-slate-800/25 rounded-3xl border border-slate-800 hover:border-slate-700/60 transition-colors group relative">
+              <div
+                key={index}
+                className="swiper-slide h-auto bg-gradient-to-tr from-slate-800 to-slate-800/25 rounded-3xl border border-slate-800 hover:border-slate-700/60 transition-colors group relative"
+              >
                 <div className="flex flex-col p-5 h-full">
                   <div className="flex items-center space-x-3 mb-3">
                     <div className="relative">

@@ -1,7 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { MdFileUpload } from "react-icons/md";
-import Card from "components/card";
 import { useApolloClient, useMutation, useQuery } from "@apollo/client";
 import {
   CREATE_PREDICTION,
@@ -9,13 +8,15 @@ import {
 } from "lib/graphql/mutation/upload";
 import { GET_USER } from "lib/graphql/query/user";
 import { toast } from "sonner";
-import { useRouter } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
+import { AuthContext } from "@/lib/context/auth.context";
 
 const Upload = () => {
   const [selectedFile, setSelectedFile] = useState<any>();
   const [imageType, setImageType] = useState("");
   const [imageStyle, setImageStyle] = useState("");
   const router = useRouter();
+  const { isAuthenticated } = useContext(AuthContext);
 
   const client = useApolloClient();
 
@@ -118,12 +119,13 @@ const Upload = () => {
 
     return fetch(presignedUrl, requestOptions);
   }
+  if (!isAuthenticated) redirect("/");
 
   if (fetching || uploading) return;
 
   return (
     <div className="mt-14 flex w-full  justify-center  align-middle md:mt-20">
-      <Card className="  flex  h-max w-full  flex-col  justify-center gap-6  rounded-[20px] bg-clip-border p-3 align-middle font-dm shadow-3xl shadow-shadow-500 dark:shadow-none  md:w-6/12 ">
+      <div className="  flex  h-max w-full  flex-col  justify-center gap-6  rounded-[20px] bg-clip-border p-3 align-middle font-dm shadow-3xl shadow-shadow-500 dark:shadow-none  md:w-6/12 ">
         <div className=" flex  flex-col  justify-center gap-3 ">
           <h3 className=" text-xl font-bold leading-9 text-navy-700 dark:text-white">
             1. Өөрчлөлт хийх өрөөний зураг оруулана уу
@@ -210,7 +212,7 @@ const Upload = () => {
             </button>
           </div>
         </div>
-      </Card>
+      </div>
     </div>
   );
 };

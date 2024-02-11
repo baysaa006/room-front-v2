@@ -2,7 +2,10 @@ import Logo from "./logo";
 import { FaFacebook } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-export default function Footer() {
+interface Props {
+  admin: boolean;
+}
+export default function Footer(props: Props) {
   return (
     <footer>
       <div className="my-4 flex flex-col justify-center items-center align-middle md:w-full ">
