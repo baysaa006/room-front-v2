@@ -22,7 +22,8 @@ export default function Header(props: Props) {
           {/* Site branding */}
           <div className="flex flex-row">
             <Logo />
-            <MobileMenu />
+{admin && <MobileMenu/>}
+  
           </div>
           {admin && (
             <div className="flex justify-start">
