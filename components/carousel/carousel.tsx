@@ -6,29 +6,110 @@ import {
 } from "react-compare-slider";
 
 const Carousel = () => {
-  const images = [
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7fKE2AhTQZ6k0-dhpK4O7t9x0NTKwbfasCdz01xB8ISpMT9pENRjHeyRubPEZE7pKycs&usqp=CAU",
-    "https://businessofhome.com/system/images/12011/small169/Tonic_ChromesthesiaAscend_3.jpg?1675188578",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7fKE2AhTQZ6k0-dhpK4O7t9x0NTKwbfasCdz01xB8ISpMT9pENRjHeyRubPEZE7pKycs&usqp=CAU",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7fKE2AhTQZ6k0-dhpK4O7t9x0NTKwbfasCdz01xB8ISpMT9pENRjHeyRubPEZE7pKycs&usqp=CAU",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7fKE2AhTQZ6k0-dhpK4O7t9x0NTKwbfasCdz01xB8ISpMT9pENRjHeyRubPEZE7pKycs&usqp=CAU",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7fKE2AhTQZ6k0-dhpK4O7t9x0NTKwbfasCdz01xB8ISpMT9pENRjHeyRubPEZE7pKycs&usqp=CAU",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7fKE2AhTQZ6k0-dhpK4O7t9x0NTKwbfasCdz01xB8ISpMT9pENRjHeyRubPEZE7pKycs&usqp=CAU",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7fKE2AhTQZ6k0-dhpK4O7t9x0NTKwbfasCdz01xB8ISpMT9pENRjHeyRubPEZE7pKycs&usqp=CAU",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7fKE2AhTQZ6k0-dhpK4O7t9x0NTKwbfasCdz01xB8ISpMT9pENRjHeyRubPEZE7pKycs&usqp=CAU",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7fKE2AhTQZ6k0-dhpK4O7t9x0NTKwbfasCdz01xB8ISpMT9pENRjHeyRubPEZE7pKycs&usqp=CAU",
+  const before = [
+    {
+      image:
+        "https://dev-room-images.s3.ap-southeast-1.amazonaws.com/4e5cfa4e-8aeb-40cc-a060-3358088c523e.jpg",
+      title: "Real photo",
+    },
+    {
+      image:
+        "https://dev-room-images.s3.ap-southeast-1.amazonaws.com/102160463-interior-design-living-room-drawing-3d-illustration.jpg",
+      title: "Sketch",
+    },
+    {
+      image:
+        "https://dev-room-images.s3.ap-southeast-1.amazonaws.com/4e5cfa4e-8aeb-40cc-a060-3358088c523e.jpg",
+      title: "Real photo",
+    },
+    {
+      image:
+        "https://dev-room-images.s3.ap-southeast-1.amazonaws.com/interior-design-living-room-custom-drawing-MXPKXK.jpg",
+      title: "Sketch",
+    },
+    {
+      image:
+        "https://dev-room-images.s3.ap-southeast-1.amazonaws.com/4e5cfa4e-8aeb-40cc-a060-3358088c523e.jpg",
+      title: "Real photo",
+    },
+    {
+      image:
+        "https://dev-room-images.s3.ap-southeast-1.amazonaws.com/102160463-interior-design-living-room-drawing-3d-illustration.jpg",
+      title: "Sketch",
+    },
+    {
+      image:
+        "https://dev-room-images.s3.ap-southeast-1.amazonaws.com/4e5cfa4e-8aeb-40cc-a060-3358088c523e.jpg",
+      title: "Real photo",
+    },
+    {
+      image:
+        "https://dev-room-images.s3.ap-southeast-1.amazonaws.com/102160463-interior-design-living-room-drawing-3d-illustration.jpg",
+      title: "Sketch",
+    },
+    {
+      image:
+        "https://dev-room-images.s3.ap-southeast-1.amazonaws.com/4e5cfa4e-8aeb-40cc-a060-3358088c523e.jpg",
+      title: "Real photo",
+    },
+    {
+      image:
+        "https://dev-room-images.s3.ap-southeast-1.amazonaws.com/102160463-interior-design-living-room-drawing-3d-illustration.jpg",
+      title: "Sketch",
+    },
+  ];
 
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7fKE2AhTQZ6k0-dhpK4O7t9x0NTKwbfasCdz01xB8ISpMT9pENRjHeyRubPEZE7pKycs&usqp=CAU",
-
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7fKE2AhTQZ6k0-dhpK4O7t9x0NTKwbfasCdz01xB8ISpMT9pENRjHeyRubPEZE7pKycs&usqp=CAU",
-
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7fKE2AhTQZ6k0-dhpK4O7t9x0NTKwbfasCdz01xB8ISpMT9pENRjHeyRubPEZE7pKycs&usqp=CAU",
-
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7fKE2AhTQZ6k0-dhpK4O7t9x0NTKwbfasCdz01xB8ISpMT9pENRjHeyRubPEZE7pKycs&usqp=CAU",
-
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7fKE2AhTQZ6k0-dhpK4O7t9x0NTKwbfasCdz01xB8ISpMT9pENRjHeyRubPEZE7pKycs&usqp=CAU",
-
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7fKE2AhTQZ6k0-dhpK4O7t9x0NTKwbfasCdz01xB8ISpMT9pENRjHeyRubPEZE7pKycs&usqp=CAU",
+  const after = [
+    {
+      image:
+        "https://s3.ap-southeast-1.amazonaws.com/dev-room-images/images/1700667540958.png",
+      title: "Real photo",
+    },
+    {
+      image:
+        "https://dev-room-images.s3.ap-southeast-1.amazonaws.com/replicate-prediction-g4hmmrrbeu2ir2ae252lnpe7lm.png",
+      title: "Sketch",
+    },
+    {
+      image:
+        "https://s3.ap-southeast-1.amazonaws.com/dev-room-images/images/1700667540958.png",
+      title: "Real photo",
+    },
+    {
+      image:
+        "https://dev-room-images.s3.ap-southeast-1.amazonaws.com/replicate-prediction-3nzbt2jblgitawhl3q4delr6hy.png",
+      title: "Sketch",
+    },
+    {
+      image:
+        "https://s3.ap-southeast-1.amazonaws.com/dev-room-images/images/1700667540958.png",
+      title: "Real photo",
+    },
+    {
+      image:
+        "https://dev-room-images.s3.ap-southeast-1.amazonaws.com/replicate-prediction-g4hmmrrbeu2ir2ae252lnpe7lm.png",
+      title: "Sketch",
+    },
+    {
+      image:
+        "https://s3.ap-southeast-1.amazonaws.com/dev-room-images/images/1700667540958.png",
+      title: "Real photo",
+    },
+    {
+      image:
+        "https://dev-room-images.s3.ap-southeast-1.amazonaws.com/replicate-prediction-g4hmmrrbeu2ir2ae252lnpe7lm.png",
+      title: "Sketch",
+    },
+    {
+      image:
+        "https://s3.ap-southeast-1.amazonaws.com/dev-room-images/images/1700667540958.png",
+      title: "Real photo",
+    },
+    {
+      image:
+        "https://dev-room-images.s3.ap-southeast-1.amazonaws.com/replicate-prediction-g4hmmrrbeu2ir2ae252lnpe7lm.png",
+      title: "Sketch",
+    },
   ];
 
   return (
@@ -48,9 +129,9 @@ const Carousel = () => {
               }}
             />
           }
-          style={{ height: 260 }}
-          itemOne={<Slider gray={false} images={images} />}
-          itemTwo={<Slider gray={true} images={images} />}
+          style={{ height: 300 }}
+          itemOne={<Slider images={after} />}
+          itemTwo={<Slider images={before} />}
         />
       </div>
     </div>

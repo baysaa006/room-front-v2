@@ -56,7 +56,7 @@ export default function SignIn() {
         <AuthLogo />
         {/* Page title */}
         <h1 className="h2 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60">
-          Sign in to your account
+          Нэвтрэх
         </h1>
       </div>
 
@@ -69,7 +69,7 @@ export default function SignIn() {
                 className="block text-sm text-slate-300 font-medium mb-1"
                 htmlFor="email"
               >
-                Email
+                И-майл
               </label>
               <input
                 id="phone"
@@ -85,13 +85,13 @@ export default function SignIn() {
                   className="block text-sm text-slate-300 font-medium mb-1"
                   htmlFor="password"
                 >
-                  Password
+                  Нууц үг
                 </label>
                 <Link
                   className="text-sm font-medium text-purple-500 hover:text-purple-400 transition duration-150 ease-in-out ml-2"
                   href="/reset-password"
                 >
-                  Forgot?
+                  Мартсан?
                 </Link>
               </div>
               <input
@@ -109,7 +109,7 @@ export default function SignIn() {
               onClick={handleLogin}
               className="btn text-sm text-white bg-purple-500 hover:bg-purple-600 w-full shadow-sm group"
             >
-              Sign In{" "}
+              Нэвтрэх{" "}
               <span className="tracking-normal text-purple-300 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                 -&gt;
               </span>
@@ -119,12 +119,12 @@ export default function SignIn() {
 
         <div className="text-center mt-4">
           <div className="text-sm text-slate-400">
-            Don't have an account?{" "}
+            Бүртгүүлээгүй бол?{" "}
             <button
               className="font-medium text-purple-500 hover:text-purple-400 transition duration-150 ease-in-out"
               onClick={handleLogin}
             >
-              Sign up
+              Бүртгүүлэх
             </button>
           </div>
         </div>
